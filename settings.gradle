@@ -1,0 +1,12 @@
+pluginManagement {
+    plugins {
+        id 'org.springframework.boot' version "${springBootVersion}"
+        id 'io.spring.dependency-management' version "${springDependencyManagementVersion}"
+    }
+}
+
+// define the root project name and include subprojects
+rootProject.name = 'application-name'
+include(":module:module-core")
+include(":module:module-api")
+include(":module:module-infra")
